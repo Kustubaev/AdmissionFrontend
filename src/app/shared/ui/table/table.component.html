@@ -1,0 +1,62 @@
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)" class="table">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">Id</th>
+      <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="fullNameSpec">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by string">Специальность</th>
+      <td mat-cell *matCellDef="let element">{{ element.fullNameSpec }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="zach">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">Зачислено</th>
+      <td mat-cell *matCellDef="let element">{{ element.zach }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Plan_B">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">Всего мест</th>
+      <td mat-cell *matCellDef="let element">{{ element.Plan_B }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="FIO">
+     <th mat-header-cell *matHeaderCellDef mat-sort-header>ФИО</th>
+     <td mat-cell *matCellDef="let element">{{ element.FIO }}</td>
+   </ng-container>
+
+    <ng-container matColumnDef="Telephone">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by string">Телефон</th>
+      <td mat-cell *matCellDef="let element">{{ element.Telephone }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Kod_Depat">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by string">Kod Depat</th>
+      <td mat-cell *matCellDef="let element">{{ element.Kod_Depat }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Kod_Spec">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by string">Kod Spec</th>
+      <td mat-cell *matCellDef="let element">{{ element.Kod_Spec }}</td>
+    </ng-container>
+
+    <!-- <ng-container matColumnDef="comment">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">Комментарии</th>
+      <td mat-cell *matCellDef="let element">{{ element.comment }}</td>
+    </ng-container> -->
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <ng-container *ngIf="applicantsResponse$ | async as applicantsResponse">
+    <mat-paginator
+      [pageSizeOptions]="[10, 25, 50, 100]"
+      showFirstLastButtons
+      aria-label="Select page of periodic elements"
+      (page)="handlePageEvent($event)"
+      [length]="applicantsResponse.total"
+    >
+    </mat-paginator>
+  </ng-container>
+</div>

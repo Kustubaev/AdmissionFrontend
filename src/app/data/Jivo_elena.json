@@ -1,0 +1,136 @@
+{
+  "created_at": 1745650793,
+  "filters": {
+    "empty": false,
+    "site_id": 1374270,
+    "search_string": null,
+    "chat_ids": [],
+    "channel_ids": null,
+    "agent_ids": null,
+    "period_from": 1745607600,
+    "period_to": 1745693999,
+    "chat_status": null,
+    "chat_types": null,
+    "call_types": null,
+    "bot_ids": null,
+    "rating": null,
+    "has_comment": null,
+    "topic_ids": []
+  },
+  "agents": [],
+  "bots": [],
+  "statuses": [],
+  "tags": [],
+  "channels": [
+    {
+      "widget_id": 2524517,
+      "name": "nmstu_bot",
+      "joint_name": "Telegram",
+      "status_id": 1
+    }
+  ],
+  "clients": [
+    {
+      "client_id": 56846,
+      "name": "\ud835\udc0c.\ud835\udfd5\ud835\udfd2.\ud83e\ude76\ud83d\udc08\u200d\u2b1b",
+      "chats": {
+        "1": {
+          "chat_id": 138610,
+          "widget_id": 2524517,
+          "started_at": 1745646538,
+          "events": [
+            {
+              "chat_id": 138610,
+              "msg_id": 1142711,
+              "client_id": 56846,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745646538,
+              "event_type": "message",
+              "text": "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435 \n\u041c\u043e\u0436\u043d\u043e \u043f\u043e\u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043e\u0432\u0430\u0442\u044c\u0441\u044f? \u041a\u0430\u043a\u0438\u0435 \u043c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u043e\u0445\u043e\u0434\u043d\u044b\u0435 \u0431\u0430\u043b\u043b\u044b \u043d\u0443\u0436\u043d\u043e \u0441\u0434\u0430\u0432\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u044f \u043d\u0430 \u0444\u0430\u043a\u0443\u043b\u044c\u0442\u0435\u0442 \u044e\u0440\u0438\u0441\u043f\u0440\u0443\u0434\u0435\u043d\u0446\u0438\u0438?",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            }
+          ],
+          "first_waiting": null,
+          "duration": null,
+          "accepted_agent_id": 0,
+          "rating": null,
+          "rating_comment": null,
+          "topic_id": null,
+          "navigation": null,
+          "chat_type": "incoming"
+        }
+      },
+      "channel_id": 2524517,
+      "last_chat_id": 138610,
+      "visits_count": 0,
+      "tag_ids": null,
+      "chat_count": 2,
+      "link": null,
+      "crm_link": null,
+      "phone_numbers": null,
+      "emails": null,
+      "social": null,
+      "custom_data": null,
+      "status_id": null,
+      "description": null,
+      "geo": null,
+      "utm": null,
+      "attributes": null
+    },
+    {
+      "client_id": 57423,
+      "name": "\u0410\u0439\u043d\u0443\u0440 \u041c\u0430\u0445\u043c\u0443\u0442\u043e\u0432",
+      "chats": [
+        {
+          "chat_id": 138609,
+          "widget_id": 2524517,
+          "started_at": 1745645906,
+          "events": [
+            {
+              "chat_id": 138609,
+              "msg_id": 1142709,
+              "client_id": 57423,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745645906,
+              "event_type": "message",
+              "text": "/start",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            }
+          ],
+          "first_waiting": null,
+          "duration": null,
+          "accepted_agent_id": 0,
+          "rating": null,
+          "rating_comment": null,
+          "topic_id": null,
+          "navigation": null,
+          "chat_type": "incoming"
+        }
+      ],
+      "channel_id": 2524517,
+      "last_chat_id": 138609,
+      "visits_count": 0,
+      "tag_ids": null,
+      "chat_count": 1,
+      "link": null,
+      "crm_link": null,
+      "phone_numbers": null,
+      "emails": null,
+      "social": null,
+      "custom_data": null,
+      "status_id": null,
+      "description": null,
+      "geo": null,
+      "utm": null,
+      "attributes": null
+    }
+  ]
+}

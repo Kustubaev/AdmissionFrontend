@@ -1,0 +1,535 @@
+{
+  "created_at": 1745583712,
+  "filters": {
+    "empty": false,
+    "site_id": 1374270,
+    "search_string": null,
+    "chat_ids": [],
+    "channel_ids": null,
+    "agent_ids": null,
+    "period_from": 1745434800,
+    "period_to": 1745521199,
+    "chat_status": null,
+    "chat_types": null,
+    "call_types": null,
+    "bot_ids": null,
+    "rating": null,
+    "has_comment": null,
+    "topic_ids": []
+  },
+  "agents": [
+    { "agent_id": 9, "name": "\u0418\u0440\u0438\u043d\u0430" },
+    { "agent_id": 3, "name": "\u042e\u043b\u0438\u0430\u043d\u0430" }
+  ],
+  "bots": [],
+  "statuses": [{ "status_id": 2, "title": "finished", "color": "0ed16a" }],
+  "tags": [],
+  "channels": [
+    {
+      "widget_id": 2524517,
+      "name": "nmstu_bot",
+      "joint_name": "Telegram",
+      "status_id": 1
+    },
+    {
+      "widget_id": 2523235,
+      "name": "\u041e\u043f\u043e\u0440\u043d\u044b\u0439 \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u041c\u0413\u0422\u0423 \u0438\u043c. \u0413.\u0418. \u041d\u043e\u0441\u043e\u0432\u0430",
+      "joint_name": "VKontakte",
+      "status_id": 1
+    },
+    {
+      "widget_id": 2520857,
+      "name": "magtu.ru",
+      "joint_name": "Web",
+      "status_id": 1
+    },
+    {
+      "widget_id": 3391665,
+      "name": "\u0410\u0431\u0438\u0442\u0443\u0440\u0438\u0435\u043d\u0442 \u041c\u0413\u0422\u0423 \u0438\u043c. \u0413.\u0418. \u041d\u043e\u0441\u043e\u0432\u0430",
+      "joint_name": "VKontakte",
+      "status_id": 1
+    },
+    {
+      "widget_id": 2523384,
+      "name": "hotline@magtu.ru",
+      "joint_name": "Email",
+      "status_id": 0
+    },
+    {
+      "widget_id": 4742531,
+      "name": "78001001934",
+      "joint_name": "Web",
+      "status_id": 1
+    }
+  ],
+  "clients": [
+    {
+      "client_id": 57391,
+      "name": "Jhon Tom",
+      "chats": [
+        {
+          "chat_id": 138558,
+          "widget_id": 2524517,
+          "started_at": 1745514990,
+          "events": [
+            {
+              "chat_id": 138558,
+              "msg_id": 1142145,
+              "client_id": 57391,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745514990,
+              "event_type": "message",
+              "text": "/start",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138558,
+              "msg_id": 1142203,
+              "client_id": 57391,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745552330,
+              "event_type": "message",
+              "text": null,
+              "media_type": "error",
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138558,
+              "msg_id": 1142204,
+              "client_id": 57391,
+              "agent_id": 9,
+              "bot_id": null,
+              "channel_type": "rmo",
+              "created_ts": 1745552332,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138558,
+              "msg_id": 1142205,
+              "client_id": 57391,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745552333,
+              "event_type": "message",
+              "text": null,
+              "media_type": "error",
+              "keyboard": null,
+              "is_markdown": false
+            }
+          ],
+          "first_waiting": 37342,
+          "duration": 4,
+          "accepted_agent_id": 9,
+          "rating": null,
+          "rating_comment": null,
+          "topic_id": null,
+          "navigation": null,
+          "chat_type": "incoming"
+        }
+      ],
+      "channel_id": 2524517,
+      "last_chat_id": 138558,
+      "visits_count": 0,
+      "tag_ids": null,
+      "chat_count": 1,
+      "link": null,
+      "crm_link": null,
+      "phone_numbers": null,
+      "emails": null,
+      "social": null,
+      "custom_data": null,
+      "status_id": null,
+      "description": null,
+      "geo": null,
+      "utm": null,
+      "attributes": null
+    },
+    {
+      "client_id": 57390,
+      "name": "MARIA",
+      "chats": [
+        {
+          "chat_id": 138557,
+          "widget_id": 2524517,
+          "started_at": 1745512124,
+          "events": [
+            {
+              "chat_id": 138557,
+              "msg_id": 1142143,
+              "client_id": 57390,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745512124,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138557,
+              "msg_id": 1142199,
+              "client_id": 57390,
+              "agent_id": 9,
+              "bot_id": null,
+              "channel_type": "rmo",
+              "created_ts": 1745552322,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            }
+          ],
+          "first_waiting": 40198,
+          "duration": 4,
+          "accepted_agent_id": 9,
+          "rating": null,
+          "rating_comment": null,
+          "topic_id": null,
+          "navigation": [
+            {
+              "url": "https://telegram.me/mariae_me",
+              "title": "nmstu_bot",
+              "time": 1745512124
+            }
+          ],
+          "chat_type": "incoming"
+        }
+      ],
+      "channel_id": 2524517,
+      "last_chat_id": 138564,
+      "visits_count": 0,
+      "tag_ids": null,
+      "chat_count": 3,
+      "link": null,
+      "crm_link": null,
+      "phone_numbers": null,
+      "emails": null,
+      "social": null,
+      "custom_data": null,
+      "status_id": null,
+      "description": null,
+      "geo": null,
+      "utm": null,
+      "attributes": null
+    },
+    {
+      "client_id": 57389,
+      "name": "\u0412\u0430\u0441\u0438\u043b\u0438\u0441\u0430 \u0421\u0435\u043c\u0435\u0447\u043a\u0430",
+      "chats": [
+        {
+          "chat_id": 138556,
+          "widget_id": 2523235,
+          "started_at": 1745506855,
+          "events": [
+            {
+              "chat_id": 138556,
+              "msg_id": 1142129,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142130,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142131,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142132,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142133,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142134,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142135,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142136,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142137,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142138,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142139,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506855,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142140,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506856,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142141,
+              "client_id": 57389,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745506856,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138556,
+              "msg_id": 1142193,
+              "client_id": 57389,
+              "agent_id": 9,
+              "bot_id": null,
+              "channel_type": "rmo",
+              "created_ts": 1745552309,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            }
+          ],
+          "first_waiting": 45454,
+          "duration": 58,
+          "accepted_agent_id": 9,
+          "rating": null,
+          "rating_comment": null,
+          "topic_id": null,
+          "navigation": null,
+          "chat_type": "incoming"
+        }
+      ],
+      "channel_id": 2523235,
+      "last_chat_id": 138567,
+      "visits_count": 0,
+      "tag_ids": null,
+      "chat_count": 2,
+      "link": null,
+      "crm_link": null,
+      "phone_numbers": null,
+      "emails": null,
+      "social": null,
+      "custom_data": null,
+      "status_id": null,
+      "description": null,
+      "geo": null,
+      "utm": null,
+      "attributes": null
+    },
+    {
+      "client_id": 57249,
+      "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439",
+      "chats": {
+        "5": {
+          "chat_id": 138553,
+          "widget_id": 2524517,
+          "started_at": 1745491159,
+          "events": [
+            {
+              "chat_id": 138553,
+              "msg_id": 1142119,
+              "client_id": 57249,
+              "agent_id": null,
+              "bot_id": null,
+              "channel_type": "joint",
+              "created_ts": 1745491159,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            },
+            {
+              "chat_id": 138553,
+              "msg_id": 1142189,
+              "client_id": 57249,
+              "agent_id": 9,
+              "bot_id": null,
+              "channel_type": "rmo",
+              "created_ts": 1745552207,
+              "event_type": "message",
+              "text": "",
+              "media_type": null,
+              "keyboard": null,
+              "is_markdown": false
+            }
+          ],
+          "first_waiting": 61048,
+          "duration": 52,
+          "accepted_agent_id": 9,
+          "rating": null,
+          "rating_comment": null,
+          "topic_id": null,
+          "navigation": [
+            {
+              "url": "https://telegram.me/LY_SVSTPL",
+              "title": "nmstu_bot",
+              "time": 1745491159
+            }
+          ],
+          "chat_type": "incoming"
+        }
+      },
+      "channel_id": 2524517,
+      "last_chat_id": 138553,
+      "visits_count": 0,
+      "tag_ids": null,
+      "chat_count": 6,
+      "link": null,
+      "crm_link": null,
+      "phone_numbers": null,
+      "emails": null,
+      "social": null,
+      "custom_data": null,
+      "status_id": null,
+      "description": null,
+      "geo": null,
+      "utm": null,
+      "attributes": null
+    }
+  ]
+}
