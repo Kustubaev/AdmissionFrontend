@@ -1,9 +1,28 @@
 :host {
- display: block;
- margin: 0.5rem 0 2rem;
+  display: block;
+  margin: 0.5rem 0 2rem;
 }
 
 .table {
- width: 100%;
- min-height: 650px;
+  width: 100%;
+  min-height: 650px;
+}
+
+.search-container {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input {
+  min-width: 300px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mat-elevation-z8 {
+  margin-top: 16px;
 }

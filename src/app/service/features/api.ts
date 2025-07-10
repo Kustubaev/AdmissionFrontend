@@ -65,12 +65,12 @@ export interface getInterface {
   conditions?:
     | {
         name: string; //Для вложенных условий => 'a.b.c', для массивов => 'a[0].b'!
-        comparison: '==' | '<' | '<=' | '>' | '>=' | '!=' | 'like';
+        comparison: '==' | '<' | '<=' | '>' | '>=' | '!=' | 'like' | string;
         value: number | string | null | string[];
       }
     | {
         name: string; //Для вложенных условий => 'a.b.c', для массивов => 'a[0].b'!
-        comparison: '==' | '<' | '<=' | '>' | '>=' | '!=' | 'like';
+        comparison: '==' | '<' | '<=' | '>' | '>=' | '!=' | 'like' | string;
         value: number | string | null | string[];
       }[]
     | null;
@@ -93,4 +93,5 @@ const enumConditions: { [key: string]: string } = {
   '>=': '_gte',
   '!=': '_neq',
   like: '_like',
+  search: '_search',
 };

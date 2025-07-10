@@ -1,6 +1,4 @@
 export interface Applicant {
-  id: number; // Уникальный идентификатор записи
-
   fullNameSpec: string; // Полное название специальности
   FIO: string; // ФИО абитуриента
   Telephone: string; // Номер телефона

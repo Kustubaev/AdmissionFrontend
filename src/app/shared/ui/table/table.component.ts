@@ -18,13 +18,14 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { Applicant } from '../../../interface/Applicant';
 import { AdmissionService } from '../../../service/api/admission.service';
 import { getInterface } from '../../../service/features/api';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   standalone: true,
   selector: 'app-table',
-  imports: [MatTableModule, MatPaginatorModule, MatSortModule, CommonModule],
+  imports: [MatTableModule, MatPaginatorModule, MatSortModule, CommonModule, FormsModule],
   templateUrl: './table.component.html',
-  styleUrl: './table.component.scss',
+  styleUrls: ['./table.component.scss'],
 })
 export class TableComponent {
   protected admissionService = inject(AdmissionService);
@@ -37,7 +38,6 @@ export class TableComponent {
   );
 
   protected readonly displayedColumns: string[] = [
-    'id',
     'fullNameSpec',
     'zach',
     'Plan_B',
@@ -54,32 +54,8 @@ export class TableComponent {
 
   private pageSizeSignal = signal<number>(10);
   private currentPageSignal = signal<number>(1);
-  private sortSignal = signal<string>('id');
-
-  private paramsGets = computed<getInterface>(() => ({
-    pagination: {
-      page: this.currentPageSignal(),
-      count: this.pageSizeSignal(),
-    },
-    sort: this.sortSignal(),
-    conditions: [
-      // {
-      //   name: 'id',
-      //   comparison: '==',
-      //   value: ['6', '2', '7', '4', '5'],
-      // },
-      // {
-      //   name: 'comment',
-      //   comparison: 'like',
-      //   value: ' третий ',
-      // },
-      // {
-      //   name: 'countScore',
-      //   comparison: '>=',
-      //   value: 168,
-      // },
-    ],
-  }));
+  private sortSignal = signal<string>('');
+  public searchQuery = signal<string>('');
 
   constructor() {
     effect(() => {
@@ -98,19 +74,14 @@ export class TableComponent {
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
-    // this.dataSource.sort = this.sort;
   }
 
-  // Функция для пагинации
   handlePageEvent(e: PageEvent) {
     this.pageSizeSignal.set(e.pageSize);
     this.currentPageSignal.set(e.pageIndex + 1);
   }
 
-  // Функция для сортировки {active: 'fio', direction: 'asc'}
-    announceSortChange(sortState: Sort) {
-        console.log("sortState", sortState);
-        
+  announceSortChange(sortState: Sort) {
     if (sortState.direction === '') {
       this.sortSignal.set('');
     } else {
@@ -119,4 +90,33 @@ export class TableComponent {
       );
     }
   }
+
+  onSearchInput(event: Event) {
+    const input = (event.target as HTMLInputElement).value;
+    this.searchQuery.set(input.trim());
+  }
+
+  private paramsGets = computed<getInterface>(() => {
+    const conditions = [];
+
+    // Если есть текст в поиске — добавляем условия _search
+    if (this.searchQuery()) {
+      const searchValue = this.searchQuery().toLowerCase();
+
+      conditions.push(
+        { name: 'FIO', comparison: 'search', value: searchValue },
+        { name: 'fullNameSpec', comparison: 'search', value: searchValue },
+        { name: 'Telephone', comparison: 'search', value: searchValue }
+      );
+    }
+
+    return {
+      pagination: {
+        page: this.currentPageSignal(),
+        count: this.pageSizeSignal(),
+      },
+      sort: this.sortSignal(),
+      conditions: conditions.length > 0 ? conditions : null,
+    };
+  });
 }
