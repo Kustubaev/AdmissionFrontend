@@ -8,6 +8,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import { toObservable } from '@angular/core/rxjs-interop';
+import { FormsModule } from '@angular/forms';
 import {
   MatPaginator,
   MatPaginatorModule,
@@ -18,12 +19,17 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { Applicant } from '../../../interface/Applicant';
 import { AdmissionService } from '../../../service/api/admission.service';
 import { getInterface } from '../../../service/features/api';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   standalone: true,
   selector: 'app-table',
-  imports: [MatTableModule, MatPaginatorModule, MatSortModule, CommonModule, FormsModule],
+  imports: [
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    CommonModule,
+    FormsModule,
+  ],
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
 })
@@ -43,8 +49,8 @@ export class TableComponent {
     'Plan_B',
     'FIO',
     'Telephone',
-    'Kod_Depat',
-    'Kod_Spec',
+    // 'Kod_Depat',
+    // 'Kod_Spec',
   ];
 
   protected dataSource = new MatTableDataSource<Applicant>([]);
@@ -54,7 +60,7 @@ export class TableComponent {
 
   private pageSizeSignal = signal<number>(10);
   private currentPageSignal = signal<number>(1);
-  private sortSignal = signal<string>('');
+  private sortSignal = signal<string>('fullNameSpec');
   public searchQuery = signal<string>('');
 
   constructor() {
