@@ -1,5 +1,6 @@
 // Интерфейс для пагинации
 export interface Pagination<T> {
+  meta: any;
   current_page: number;
   data: T[];
   first_page_url: string;

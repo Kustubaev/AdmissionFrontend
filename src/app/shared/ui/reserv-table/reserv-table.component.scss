@@ -1,0 +1,84 @@
+.mat-elevation-z8 {
+  margin: 16px;
+}
+
+.table {
+  width: 100%;
+  min-height: 500px;
+}
+
+.mat-header-cell,
+.mat-cell {
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.navigation {
+  padding-right: 16px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation button {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 5px;
+  background: #ffde5c;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.navigation button:hover {
+  background: #feaa01;
+  color: black;
+}
+
+.ReserveHeader {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.delbut {
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #922525;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.delbut:hover {
+  color: #fff;
+  background-color: #922525;
+}
+
+.search-container {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input {
+  min-width: 300px;
+  width: 60%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto;
+}

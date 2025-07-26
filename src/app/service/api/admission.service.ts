@@ -40,4 +40,8 @@ export class AdmissionService {
   getApplicantsFiltered() {
     return this.applicantsFiltered;
   }
+
+addToReserv(data: { Nom_Folder: string; Kod_Spec: string; Kod_Depat: string }): Observable<any> {
+  return this.http.post(`${this.baseUrl}/api/v1/reserv`, data);
+}
 }

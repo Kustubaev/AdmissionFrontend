@@ -1,7 +1,17 @@
 .admission__title {
- text-align: center;
- margin: 0.5rem;
- font-size: 30px;
- line-height: 1.3;
- font-weight: 700;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.navigation {
+  justify-self: end;
 }

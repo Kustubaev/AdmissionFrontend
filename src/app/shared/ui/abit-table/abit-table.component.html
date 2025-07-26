@@ -2,7 +2,7 @@
   <div class="search-container">
     <input
       type="text"
-      placeholder="Поиск по специальности, фио, телефону ..."
+      placeholder="Поиск по номеру дела, специальности, ФИО, телефону ..."
       [(ngModel)]="searchQuery"
       (input)="onSearchInput($event)"
       class="search-input"
@@ -26,6 +26,19 @@
         Специальность
       </th>
       <td mat-cell *matCellDef="let element">{{ element.fullNameSpec }}</td>
+    </ng-container>
+
+    <!-- Nom_Folder -->
+    <ng-container matColumnDef="Nom_Folder">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="Sort by string"
+      >
+        Номер дела
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.Nom_Folder }}</td>
     </ng-container>
 
     <ng-container matColumnDef="zach">
@@ -52,6 +65,18 @@
       <td mat-cell *matCellDef="let element">{{ element.Plan_B }}</td>
     </ng-container>
 
+    <ng-container matColumnDef="Zapis">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="Sort by number"
+      >
+        Запись
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.Zapis }}</td>
+    </ng-container>
+
     <ng-container matColumnDef="FIO">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>ФИО</th>
       <td mat-cell *matCellDef="let element">{{ element.FIO }}</td>
@@ -67,6 +92,15 @@
         Телефон
       </th>
       <td mat-cell *matCellDef="let element">{{ element.Telephone }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Действия</th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-button color="primary" (click)="onAdd(element)">
+          Добавить
+        </button>
+      </td>
     </ng-container>
 
     <!-- <ng-container matColumnDef="Kod_Depat">

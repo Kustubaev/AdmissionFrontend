@@ -1,0 +1,68 @@
+<div class="mat-elevation-z8">
+  <div class="search-container">
+    <input
+      type="text"
+      placeholder="Поиск по Номеру дела, Kod_Spec, Kod_Depat..."
+      [value]="searchQuery()"
+      (input)="onSearchInput($event)"
+      class="search-input"
+    />
+  </div>
+
+  <div class="table-container">
+    <table
+      mat-table
+      [dataSource]="dataSource"
+      matSort
+      (matSortChange)="announceSortChange($event)"
+      class="table"
+    >
+      <!-- Nom_Folder -->
+      <ng-container matColumnDef="Nom_Folder">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Номер дела</th>
+        <td mat-cell *matCellDef="let element">{{ element.Nom_Folder }}</td>
+      </ng-container>
+
+      <!-- Kod_Spec -->
+      <ng-container matColumnDef="Kod_Spec">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Kod Spec</th>
+        <td mat-cell *matCellDef="let element">{{ element.Kod_Spec }}</td>
+      </ng-container>
+
+      <!-- Kod_Depat -->
+      <ng-container matColumnDef="Kod_Depat">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Kod Depat</th>
+        <td mat-cell *matCellDef="let element">{{ element.Kod_Depat }}</td>
+      </ng-container>
+
+      <!-- Actions -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Действия</th>
+        <td mat-cell *matCellDef="let element">
+          <button
+            class="delbut"
+            mat-button
+            color="warn"
+            (click)="onDelete(element)"
+          >
+            Удалить
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <ng-container *ngIf="reservResponse$ | async as reservResponse">
+      <mat-paginator
+        [pageSizeOptions]="[10, 25, 50, 100]"
+        showFirstLastButtons
+        aria-label="Select page of periodic elements"
+        (page)="handlePageEvent($event)"
+        [length]="reservResponse.total"
+      >
+      </mat-paginator>
+    </ng-container>
+  </div>
+</div>
